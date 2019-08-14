@@ -6,7 +6,7 @@
 A program to map pixelated images / topological maps
 to voxelated renderings based on pixel intensities
 
-#### Example:
+### Example:
 
 **mountn.png** file 48 x 48 pixels
 
