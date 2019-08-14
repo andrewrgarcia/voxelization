@@ -10,10 +10,6 @@ import matplotlib as mpl
 '''voxelization.py - A program to map pixelated images / topological maps
 to voxelated renderings based on pixel intensities 
 Andrew Garcia, 2019'''
-
-def running_mean(x, N):
-    cumsum = np.cumsum(np.insert(x, 0, 0)) 
-    return (cumsum[N:] - cumsum[:-N]) / float(N)
         
 def build(N=2):
    
@@ -36,12 +32,7 @@ def build(N=2):
     px=lum_img.shape[0]
     py=lum_img.shape[1]
 
-    #width, height, depth
-    WD=[[]]*N
-    HT=[[]]*N
     pixcrit=np.linspace(0.1,0.9,N)[::-1]
-    DEP=[[]]*N
-    
     
     '''voxels'''
     px,py = int(px), int(py)
@@ -58,10 +49,9 @@ def build(N=2):
                     newcube = (x == i) & (y == j) & (z == a) 
                     voxels = voxels | newcube
     
-    'color map of voxels:
+    'color map of voxels:'
 #    camp=mpl.cm.Greens
     camp=mpl.cm.Reds
-
 
     colors = np.empty(voxels.shape, dtype=object)
     colors[voxels] = 'pink'
@@ -71,20 +61,15 @@ def build(N=2):
         for i in range(px):
             for j in range(py):
                 colors[i][j][a] = camp(220-5*a)
-    
-    ''' '''
-    
+        
     fig = plt.figure('output')
 #    ax = plt.axes(projection='3d') 
     ax = fig.gca(projection='3d')
-
     
     ax.voxels(voxels, facecolors=colors, edgecolor='k')  
     
     plt.xlabel('')
     plt.ylabel('')
-#    plt.suptitle('Garcia 2018')
-    
     plt.show()
     
 build(50)
