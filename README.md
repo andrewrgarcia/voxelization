@@ -10,8 +10,8 @@ Example:
 
 _mountn.png file 48 x 48 pixels_
 
-<img src="mountn.png" alt="drawing" width="100"/></a>
+<img src="mountn.png" alt="drawing" width="150"/></a>
 
 _script output / treatment of mountn.png_
 
-<img src="output.png" alt="drawing" width="100"/></a>
+<img src="output.png" alt="drawing" width="300"/></a>
