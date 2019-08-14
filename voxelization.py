@@ -57,8 +57,12 @@ def build(N=2):
                 if lum_img[i,j] < pixcrit[a]:
                     newcube = (x == i) & (y == j) & (z == a) 
                     voxels = voxels | newcube
-                    
-    camp=mpl.cm.Greens
+    
+    'color map of voxels:
+#    camp=mpl.cm.Greens
+    camp=mpl.cm.Reds
+
+
     colors = np.empty(voxels.shape, dtype=object)
     colors[voxels] = 'pink'
     
