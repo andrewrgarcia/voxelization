@@ -14,4 +14,4 @@ to voxelated renderings based on pixel intensities
 
 script output / treatment of **mountn.png**
 
-<img src="output.png" alt="drawing" width="400"/></a>
+<img src="output.png" alt="drawing" width="400"/></a><img src="output_2.png" alt="drawing" width="400"/></a>
