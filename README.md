@@ -1,6 +1,6 @@
 # ANNOUNCEMENT : This project is now deprecated
 
-This project is now deprecated. For a more functional application of this project, please re-direct to [**voxelmaps**](https://github.com/andrewrgarcia/voxelmap) and use the **voxelmaps.Image('yourfilepath.png')** object and its ->make() and ->map3d() functions to map images to 3-D models. 
+This project is now deprecated. For a more functional application of this project, please re-direct to [**voxelmap**](https://github.com/andrewrgarcia/voxelmap) and use the **voxelmap.Image('yourfilepath.png')** object and its ->make() and ->map3d() functions to map images to 3-D models. 
 
 # Voxelated renderings
 ## Andrew Garcia, 2019
